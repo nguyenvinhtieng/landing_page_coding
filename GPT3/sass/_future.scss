@@ -31,3 +31,35 @@
         }
     }
 }
+
+@media (max-width: 1024px) {
+    .future {
+        grid-template-columns: 1fr;
+        &-heading {
+            & h1 {
+                margin-bottom: 4px;
+            }
+            margin-bottom: 60px;
+        }
+        &-items {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &-heading {
+                width: 250px;
+            }
+            &-content {
+                flex: 1;
+            }
+        }
+    }
+}
+@media (max-width: 400px) {
+    .future {
+        &-items {
+            margin-bottom: 34px;
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+    }
+}

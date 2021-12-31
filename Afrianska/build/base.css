@@ -3,12 +3,7 @@ body {
     font-size: 16px;
     color: #1f3f68;
 }
-/* .layout-container {
-    max-width: 1366px;
-    margin: auto;
-} */
 .hero {
-    /*  */
     background: linear-gradient(
         0deg,
         #98c3e8 8.84%,

@@ -72,3 +72,23 @@ body {
         );
     }
 }
+
+.display-none {
+    display: none !important;
+}
+.layer-hidden {
+    position: fixed !important;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.1);
+    display: none;
+    z-index: 5;
+}
+
+@media (max-width: 1171px) {
+    .container {
+        padding: 0 16px;
+    }
+    body {
+        font-size: 12px;
+    }
+}

@@ -36,3 +36,22 @@
         }
     }
 }
+
+@media (max-width: 1000px) {
+    .register {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 36px;
+        &-btn {
+            width: fit-content;
+        }
+    }
+}
+@media (max-width: 500px) {
+    .register {
+        padding: 24px;
+        &-btn {
+            width: 100%;
+        }
+    }
+}

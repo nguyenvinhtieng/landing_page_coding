@@ -42,8 +42,10 @@
     }
     &-auth {
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
         align-items: center;
+        flex: 1;
+
         & a:nth-child(1) {
             background: transparent;
             padding: 16px 45px;
@@ -65,4 +67,82 @@
             }
         }
     }
+}
+
+@media (max-width: 1220px) {
+    .header {
+        padding: 0 12px;
+    }
+}
+
+@media (max-width: 954px) {
+    .header {
+        margin-top: 24px;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        height: 50px;
+        align-items: center;
+        &-menu {
+            margin-left: 0;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 50%;
+            background-color: #002853;
+            display: block;
+            padding-top: 50px;
+            transform: translateX(100%);
+            transition: all 0.2s linear;
+            z-index: 10;
+            &-toggle {
+                display: block !important;
+                font-size: 26px;
+            }
+            & .close-menu {
+                display: block !important;
+                position: absolute;
+                top: 16px;
+                left: 16px;
+                font-size: 34px;
+            }
+        }
+        & #toggle-menu:checked ~ .header-menu {
+            transform: translateX(0);
+        }
+        &-item {
+            padding: 16px 24px;
+        }
+        &-auth {
+            display: block;
+            margin-top: 34px;
+            margin-left: 12px;
+            & a:nth-child(1),
+            a:nth-child(2) {
+                padding: 12px 24px;
+            }
+        }
+    }
+}
+@media (max-width: 450px) {
+    .header {
+        &-menu {
+            left: 30%;
+        }
+        &-item {
+            margin: 0;
+            padding: 16px;
+        }
+    }
+}
+@media (max-width: 300px) {
+    .header {
+        &-menu {
+            left: 0;
+        }
+    }
+}
+#toggle-menu:checked ~ .layer-hidden {
+    display: block;
 }

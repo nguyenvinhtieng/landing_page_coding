@@ -28,3 +28,10 @@
         }
     }
 }
+
+@media (max-width: 900px) {
+    .imagination {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}

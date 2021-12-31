@@ -58,3 +58,38 @@
         }
     }
 }
+
+@media (max-width: 815px) {
+    .intro {
+        &-header {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+        &-desc {
+            margin: 0;
+        }
+        &-middle {
+            display: grid;
+            grid-template-columns: 1fr;
+            & p {
+                margin-top: 12px;
+            }
+            & .heading {
+                width: 100%;
+            }
+        }
+        &-bottom {
+            grid-template-columns: 1fr;
+            gap: 16px;
+        }
+        &-items-heading {
+            margin-bottom: 0px;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .intro {
+        padding: 57px 16px;
+    }
+}

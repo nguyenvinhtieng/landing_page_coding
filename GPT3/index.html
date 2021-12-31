@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="./css/app.css">
 </head>
 
@@ -18,17 +20,27 @@
             <div class="header-logo">
                 GPT-3
             </div>
+
+            <input type="checkbox" class="display-none" id="toggle-menu">
+            <label for="toggle-menu" class="layer-hidden">
+            </label>
             <ul class="header-menu">
                 <li class="header-item"><a href="#!" class="menu-link">Home</a></li>
                 <li class="header-item"><a href="#!" class="menu-link">What is GPT?</a></li>
                 <li class="header-item"><a href="#!" class="menu-link">Open AI</a></li>
                 <li class="header-item"><a href="#!" class="menu-link">Case Studies</a></li>
                 <li class="header-item"><a href="#!" class="menu-link">Library</a></li>
+                <div class="header-auth">
+                    <a href="#!">Sign in</a>
+                    <a href="#!">Sign up</a>
+                </div>
+                <label for="toggle-menu" class="display-none close-menu">
+                    <ion-icon name="close"></ion-icon>
+                </label>
             </ul>
-            <div class="header-auth">
-                <a href="#!">Sign in</a>
-                <a href="#!">Sign up</a>
-            </div>
+            <label for="toggle-menu" class="display-none header-menu-toggle">
+                <ion-icon name="menu"></ion-icon>
+            </label>
         </header>
 
         <section class="hero">
@@ -85,7 +97,7 @@
                 </p>
             </div>
             <div class="intro-middle">
-                <h1 class="text-gradient ">
+                <h1 class="text-gradient heading ">
                     The possibilities are beyond your imagination
                 </h1>
                 <p>Explore The Library</p>
@@ -120,7 +132,7 @@
             </div>
         </section>
 
-        <section class="future">
+        <section class=" future">
             <div class="future-heading">
                 <h1 class="text-gradient">The Future is Now and You Just Need To Realize It. Step into Future Today &
                     Make it Happen.</h1>

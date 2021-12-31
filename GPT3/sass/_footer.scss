@@ -71,3 +71,13 @@
         padding-bottom: 24px;
     }
 }
+
+@media (max-width: 800px) {
+    .footer {
+        width: 100%;
+        &-layout {
+            grid-template-columns: 1fr;
+            gap: 26px;
+        }
+    }
+}
