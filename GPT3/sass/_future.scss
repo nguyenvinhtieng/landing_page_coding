@@ -1,0 +1,33 @@
+.future {
+    margin-top: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    &-heading {
+        & h1 {
+            font-weight: 800;
+            font-size: 34px;
+            line-height: 45px;
+            margin-bottom: 34px;
+            max-width: 426px;
+        }
+        & a {
+            color: #ff8a71;
+            line-height: 30px;
+        }
+    }
+    &-items {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        margin-bottom: 20px;
+        &-heading {
+            font-size: 18px;
+            max-width: 182px;
+            font-weight: 800;
+            padding: 12px 0;
+        }
+        &-content {
+            font-size: 14px;
+            color: #81afdd;
+        }
+    }
+}

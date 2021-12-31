@@ -1,0 +1,30 @@
+.imagination {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 140px;
+    gap: 19px;
+    &-content {
+        & .request {
+            color: #71e5ff;
+            line-height: 30px;
+            margin-top: 144px;
+        }
+        & .heading {
+            font-size: 34px;
+            line-height: 45px;
+            font-weight: 800;
+            margin-top: 10px;
+            margin-bottom: 23px;
+        }
+        & .desc {
+            font-weight: 400;
+            color: #81afdd;
+            line-height: 30px;
+            margin-bottom: 31px;
+        }
+        & .request-2 {
+            color: #ff8a71;
+            line-height: 30px;
+        }
+    }
+}

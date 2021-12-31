@@ -1,0 +1,68 @@
+.header {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 45px;
+    &-logo {
+        font-weight: 800;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &-menu {
+        flex: 1;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        margin-left: 70px;
+    }
+    &-item {
+        margin: 0 15px;
+        & .menu-link {
+            color: inherit;
+            position: relative;
+            transition: all 0.2s linear;
+            &:before {
+                content: "";
+                position: absolute;
+                bottom: -5px;
+                left: 0;
+                height: 2px;
+                background-color: white;
+            }
+            &:hover {
+                text-decoration: none;
+                color: $orangeColor;
+                &:before {
+                    right: 0;
+                    background-color: $orangeColor;
+                }
+            }
+        }
+    }
+    &-auth {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & a:nth-child(1) {
+            background: transparent;
+            padding: 16px 45px;
+            border-radius: 5px;
+            color: inherit;
+            font-weight: 500;
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+        & a:nth-child(2) {
+            background: $orangeColor;
+            padding: 16px 45px;
+            border-radius: 5px;
+            color: inherit;
+            position: relative;
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+.companies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+    &-items {
+        padding: 8px 22px;
+        border: 1px solid transparent;
+        cursor: pointer;
+        transition: all 0.2s linear;
+        &:hover {
+            border: 1px solid #052d56;
+
+            opacity: 0.6;
+        }
+    }
+}
